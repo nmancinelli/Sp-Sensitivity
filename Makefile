@@ -10,7 +10,13 @@ clean:
 	rm -f img/*-eps-*.pdf
 	rm *diff.tex
 
-diff.pdf:
+main.pdf:
+	pdflatex main
+	bibtex main
+	pdflatex main
+	pdflatex main
+
+diff.pdf: main.pdf
 	latexdiffcite git main.tex 29e7717
 	pdflatex diff
 	bibtex diff
