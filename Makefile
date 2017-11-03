@@ -1,3 +1,5 @@
+.PHONY: clean
+
 clean:
 	rm -f *.dvi
 	rm -f *.fls
@@ -23,4 +25,5 @@ diff.pdf: main.pdf
 	latexdiff main.bbl diff.bbl > tmp.bbl
 	mv tmp.bbl diff.bbl
 	pdflatex diff
-	pdflatex diff  
+	pdflatex diff
+
