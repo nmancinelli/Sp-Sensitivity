@@ -240,7 +240,7 @@ The accurate retrieval of undulation position does not appear to depend much upo
 
 \subsection{Suboptimal data coverage---the role of smoothing}
 
-In cases where station spacing exceeds 5~km, aliasing becomes visible in the images (Figure~\ref{fig:StationSpacing}).  This appears as energy smearing along isochrons.  At 10-km station spacing, aliasing is visible, but its amplitude is sufficiently weak that it is unlikely to be problematic in practice. At 20-km spacing, however, the amplitudes are aliased to proportions comparable to the scattering potential amplitude of the Moho and LAB interfaces.
+In cases where station spacing exceeds 5~km, aliasing becomes visible in the images (Figures~\ref{fig:LABStructures10km} and ~\ref{fig:LABStructures20km}).  This appears as energy smearing along isochrons.  At 10-km station spacing, aliasing is visible, but its amplitude is sufficiently weak that it is unlikely to be problematic in practice. At 20-km spacing, however, the amplitudes are aliased to proportions comparable to the scattering potential amplitude of the Moho and LAB interfaces.
 
 This type of aliasing occurs when the dominant period of the data is small and the station spacing is large, such that receiver functions at neighboring stations do not destructively interfere when back-projected to model nodes.  This can be addressed by applying a low-pass filter to the receiver functions to increase the dominant period.  In Figure~\ref{fig:StationSpacing} we apply a Gaussian low-pass filter that introduces no additional sidelobes. Because broadening the waveforms in this way smears the energy around the discontinuities in the resulting image, there is a tradeoff between damping the aliased energy and resolution.
 
@@ -361,6 +361,20 @@ Dashed lines show the true locations of the Moho and LAB.
 (Right column) Average depth to LAB in 180~km.
 In all cases the Moho is at 60~km depth, and the station spacing is 5~km.}
 \label{fig:BadExamples}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.85]{img/Figure6_10spacing.eps}
+\caption{Same as Figure~\ref{fig:LABStructures} except for an interstation spacing of 10~km.}
+\label{fig:LABStructures10km}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.85]{img/Figure6_20spacing.eps}
+\caption{Same as Figure~\ref{fig:LABStructures} except for an interstation spacing of 20~km.}
+\label{fig:LABStructures20km}
 \end{figure}
 
 \begin{figure}
