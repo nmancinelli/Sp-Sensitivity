@@ -10,7 +10,7 @@ clean:
 	rm -f *.log
 	rm -f *.pdf
 	rm -f img/*-eps-*.pdf
-	rm *diff.tex
+	rm -f *diff.tex
 
 main.pdf:
 	pdflatex main
